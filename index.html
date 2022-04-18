@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <script type="module">
+    import copyToExcel from './index.js'
+
+    const headers = ['Name', 'Age', 'Address'];
+
+    const tableData = [
+      ['John Brown', 32, 'New York No. 1 Lake Park'],
+      ['Jim Green\t', 42, 'London No. 1 Lake Park\n'],
+      ['Joe Black', 32, 'Sidney No. 1 Lake Park'],
+    ]
+
+    copyToExcel(tableData, headers);
+
+  </script> -->
+
+  <script type="module">
+    import copyToExcel from './index.js'
+
+    const headers = ['Name', 'Age', 'Address'];
+
+    const arrayObjectData = [
+      {
+        name: 'John Brown',
+        age: 32,
+        address: 'New York No. 1 Lake Park',
+      },
+      {
+        name: 'Jim Green',
+        age: 42,
+        address: 'London No. 1 Lake Park',
+      },
+      {
+        name: 'Joe Black',
+        age: 32,
+        address: 'Sidney No. 1 Lake Park',
+      },
+    ];
+
+    copyToExcel(arrayObjectData, Object.keys(arrayObjectData[0]));
+
+  </script>
+
+</body>
+
+</html>
