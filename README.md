@@ -71,8 +71,8 @@ Jim Green	42	London No. 1 Lake Park
 Joe Black	32	Sidney No. 1 Lake Park	
 */
 
-// if you want object keys as headers
-copyToExcel(arrayObjectData, arrayObjectData[0].keys);
+// use object keys as headers
+copyToExcel(arrayObjectData,  Object.keys(arrayObjectData[0]));
 
 /* result
 name	age	address	
