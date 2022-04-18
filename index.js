@@ -26,10 +26,10 @@ export default (tableData, headers) => {
 
         if (typeof newCell === 'string') {
           if (newCell.includes('\t')) {
-            newCell = cell.replace('\t', '');
+            newCell = cell.replaceAll('\t', '');
           }
           if (newCell.includes('\n')) {
-            newCell = cell.replace('\n', '');
+            newCell = cell.replaceAll('\n', '');
           }
         }
 
