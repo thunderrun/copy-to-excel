@@ -1,6 +1,6 @@
 {
   "name": "copy-to-excel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "copy table data to clipboard",
   "main": "index.js",
   "scripts": {

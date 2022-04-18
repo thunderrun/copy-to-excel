@@ -8,8 +8,12 @@ Copy table data to clipboard
 
 ## Usage
 
+```bash
+npm i 'copy-to-excel'
+```
+
 ```js
-import copyToExcel from 'copy-to-excel'
+import copyToExcel from 'copy-to-excel';
 
 let headers = ['Name', 'Age', 'Address'];
 
